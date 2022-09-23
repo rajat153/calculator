@@ -12,19 +12,19 @@ function calculate(sign, num1, num2) {
   let ans=""
   switch (sign) {
     case "+": {
-      ans = eval(`${n1}+${n2}`);
+      ans = n1+n2;
       break;
     }
     case "-": {
-      ans = eval(`${n1}-${n2}`);
+      ans = n1-n2;
       break;
     }
     case "*": {
-      ans = eval(`${n1}*${n2}`);
+      ans = n1*n2;
       break;
     }
     case "/": {
-      ans = eval(`${n1}/${n2}`);
+      ans = n1/n2;
       break;
     }
     default:
