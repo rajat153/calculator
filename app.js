@@ -16,7 +16,7 @@ function calculate(sign, num1, num2) {
       break;
     }
     case "-": {
-      ans = n1-n2;
+      ans = `${num1}-git${num2}`;
       break;
     }
     case "*": {
