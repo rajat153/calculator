@@ -7,12 +7,12 @@ const division = document.getElementById("division");
 const result = document.getElementById("result");
 
 function calculate(sign, num1, num2) {
-  let n1 = parseInt(num1);
+  let n1 = parseInt(num1)
   let n2 = parseInt(num2);
   let ans=""
   switch (sign) {
     case "+": {
-      ans = n1+n2;
+      ans = `${num1}+${num2}`;
       break;
     }
     case "-": {
@@ -33,15 +33,17 @@ function calculate(sign, num1, num2) {
   result.innerText = `Answer is : ${ans}`;
 }
 
-add.addEventListener("click", (e) => {
+add.addEventListener("click", () => {
   calculate("+", fname.value, sname.value);
 });
-subtract.addEventListener("click", (e) => {
+subtract.addEventListener("click", () => {
   calculate("-", fname.value, sname.value);
 });
-multiply.addEventListener("click", (e) => {
+multiply.addEventListener("click", () => {
   calculate("*", fname.value, sname.value);
-});
-division.addEventListener("click", (e) => {
+}); 
+division.addEventListener("cldick", () => {
   calculate("/", fname.value, sname.value);
 });
+
+
